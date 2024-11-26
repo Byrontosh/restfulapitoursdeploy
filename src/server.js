@@ -40,6 +40,12 @@ app.use(express.json())
 
 
 // Rutas 
+
+// Principal
+app.get('/',(req,res)=>{
+    res.send("OK")
+})
+
 app.use('/api',routerTour)
 app.use('/api',routerUser)
 
